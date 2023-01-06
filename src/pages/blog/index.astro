@@ -25,13 +25,13 @@ publishedPosts = publishedPosts.sort((a, b) => {
 								{post?.frontmatter?.date?.split(" ")?.[1]?.trim()}, {post?.frontmatter?.date?.split(" ")?.[2]?.trim()}
 							</p>
 						</div>
-						<div class="relative w-5/6 border-l border-l-emerald-500 pl-4 py-2.5">
-							<div class="absolute top-0 -left-1.5 w-3 aspect-square bg-emerald-500 rounded-full" />
+						<div class="relative w-5/6 border-l border-l-cyan-500 pl-4 py-2.5">
+							<div class="absolute top-0 -left-1.5 w-3 aspect-square bg-cyan-500 rounded-full" />
 							<a href={post?.url} class="text-xl font-semibold transition-all">
 								{post?.frontmatter?.title}
 							</a>
 							<p class="text-sm text-neutral-700 leading-relaxed mt-2 lg:mt-1">{post?.frontmatter?.description}</p>
-							{index === publishedPosts?.length - 1 && <div class="absolute bottom-0 -left-1.5 w-3 aspect-square bg-emerald-500 rounded-full" />}
+							{index === publishedPosts?.length - 1 && <div class="absolute bottom-0 -left-1.5 w-3 aspect-square bg-cyan-500 rounded-full" />}
 						</div>
 					</div>
 				))
