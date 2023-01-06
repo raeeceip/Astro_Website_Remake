@@ -1,9 +1,9 @@
 [
 	{
-		"name": "Reda",
-		"description": "Reda allows you to import, organise, share and read your books, articles, and other digital documents anytime, anywhere.",
-		"url": "usereda.app",
-		"github_url": null,
+		"name": "Adopt Me",
+		"description": "Adopt Me allows a user toSelect and adopt animals from anywhere aross Canada",
+		"url": "raeeceip.github.io/Adopt-Me.js/",
+		"github_url": "github.com/raeeceip/Adopt-Me.js",
 		"image": "reda.png",
 		"status": "BETA"
 	},

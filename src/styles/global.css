@@ -44,11 +44,11 @@ li {
 }
 
 a:hover {
-	@apply text-emerald-500;
+	@apply text-cyan-500;
 }
 
 .highlight {
-	@apply text-emerald-500;
+	@apply text-cyan-500;
 }
 
 /* SITE NAV */
@@ -56,11 +56,11 @@ a:hover {
 	@apply text-neutral-500 text-sm border-t border-b border-neutral-900 py-3 my-4;
 }
 .site-nav a {
-	@apply block w-max text-neutral-500 hover:text-emerald-500 transition-all;
+	@apply block w-max text-neutral-500 hover:text-cyan-500 transition-all;
 }
 
 .back-link {
-	@apply w-max block text-emerald-500 hover:no-underline hover:-translate-x-1 text-sm my-3 transition-all !important;
+	@apply w-max block text-cyan-500 hover:no-underline hover:-translate-x-1 text-sm my-3 transition-all !important;
 }
 
 /* BLOG */
@@ -96,5 +96,5 @@ a:hover {
 	font-size: 0.88rem;
 	line-height: 1.9;
 	margin: 0;
-	@apply text-emerald-500;
+	@apply text-cyan-500;
 }
