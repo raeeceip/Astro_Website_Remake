@@ -2,6 +2,7 @@
 import Footer from "../components/Footer.astro";
 import Nav from "../components/Nav.astro";
 import "../styles/global.css";
+
 export interface Props {
 	title: string;
 	hideFooter?: boolean;
@@ -11,6 +12,7 @@ let { title, desc, hideFooter } = Astro.props;
 if (!title) title = "Chiso";
 if (!desc) desc = "Chiso- Software Developer";
 let keywords = "Chiso, Chibogu, chiso.tech, raeeceip, developer, engineer, php, python,node, typescript";
+
 ---
 
 <!DOCTYPE html>
@@ -46,7 +48,7 @@ let keywords = "Chiso, Chibogu, chiso.tech, raeeceip, developer, engineer, php, 
 
 		<title>{title}</title>
 	</head>
-	<body class="antialiased">
+	<body class="antialiased animate-fade">
 		<Nav />
 		<slot />
 		{!hideFooter && <Footer />}

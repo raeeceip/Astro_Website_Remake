@@ -3,8 +3,10 @@ import Header from "../components/Header.astro";
 import SectionHeader from "../components/SectionHeader.astro";
 import ToolCard from "../components/ToolCard.astro";
 import projects from "../data/projects.json";
-
 import Layout from "../layouts/Layout.astro";
+
+
+
 
 interface Project {
 	name: string;
@@ -14,17 +16,20 @@ interface Project {
 	image: string;
 	status: string | null;
 }
+
+// fetch projects from api
+// const projects = await fetch("https://api.chiso.tech/projects").then((res) => res.json());
+
 ---
 
 <Layout title="Chiso" hideFooter={false}>
 	<main>
 		<Header />
-
 		<h1 class="text-3xl lg:text-3xl font-bold my-4">Hi, I'm <span class="highlight">Chiso!</span> &#128075;</h1>
 		<p class="" id="about">
 			I'm a <span class="highlight">Software Developer</span> and a Psych student living in Ontario, Canada, I enjoy <span class="highlight">building</span> things that run on computers (for fun and/or to use) and exploring a lot (or a bit) of other tools, languages etc while doing that.
 			<br />
-			I'm a huge fan of comics, Scene asnd computers in general, and I taken a new interest to Cloud Development and delpoyments 
+			I'm a huge fan of comics, science and computers in general, and I taken a new interest to Cloud Development and delpoyments 
 		</p>
 
 		<section>
