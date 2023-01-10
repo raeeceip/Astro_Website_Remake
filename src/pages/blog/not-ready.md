@@ -1,13 +1,13 @@
 ---
 layout: ../../layouts/BlogLayout.astro
 title: "!Ready"
-date: 20 August 2022
+date: 2 January 2023
 description: What went wrong?
-keywords: frikax, product, software
+keywords: jobs, software
 draft: false
 ---
 
-A little over eight months ago, two guys came up with the idea to create a platform, service, application, or whatever you want to call it to bring together people in the tech industry (Techies). They were overjoyed to put their plans into action, as a larger number of people than they had anticipated were enthusiastic about the concept. They were so excited to have their first two volunteers within the first two weeks of publicizing the idea. The "planning" and design process apparently took a month, and at this point everything still looked good (LMAO). As they would have definitely and desperately needed it a couple of months ago, they were thrilled by the idea and just went with the flow _(tsk, bad)_.
+A little over a year ago months ago, I had picked up my very first curse on Udemy, an [intro to python]() course n udemy, as I had decided on a new years resolution to learn a programing language,and I intended to follow it through. My initial plan was to learn a versatile language that I could use for anything I wanted, but be primarily useful for data analysis, which would come in handy later in my degree program, I had 
 
 
 They started building but weren't moving fast enough, so one of them tweeted and the other talked to the interested volunteers, and they were overjoyed that everything was going so well. But then it didn't, and it made no sense at the time; things were slowing down as the months passed. The building continued, but the fact that the project was poorly planned and thus poorly executed could not be ignored because it was interfering with the project's development process, which they were completely ignorant of at the time. They were aware of what an MVP was, but they passively ignored it as well. At that point, people had already labelled the project as a startup, and the team had already done so, so they went along, even though they had no intention of it becoming a startup in the first place; it was always intended to be a project that delivered value. But now they had to build something more feature-rich (so they thought, stupid guys) as well as a monetization plan, because who would pitch a product with no revenue-generation plans? And this was difficult for the niche they were building in because they didn't want to rely on ads like other social media _(another sarcastic "lmao")_. It just sort of happened" is not something you want to say about how a startup started in this day and age, which was the case here, big mistake again.
