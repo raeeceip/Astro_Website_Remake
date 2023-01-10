@@ -5,7 +5,17 @@ module.exports = {
 		extend: {
 			colors: {
 				dark: "#000000",
+
 			},
+			animation: {
+				fade: 'fadeIn 5s ease-in-out',
+			},
+			keyframes: theme => ({
+				fadeIn: {
+				  '0%': { backgroundColor: theme('colors.transparent') },
+				  '100': { backgroundColor: theme('') },
+				},
+			  }),
 		},
 	},
 	plugins: [],

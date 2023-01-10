@@ -1,22 +1,25 @@
 ---
 layout: ../../layouts/BlogLayout.astro
-title: Pilot
-date: 20 May 2022
-description: Even if I have no idea what exactly i'm talking about, I hope you like the read! just keep in mind that the natural order is disorder. yes, that was an avatar quote.
-keywords: ayodeji, tech, pilot
+title: Following my passions
+date: 16 Dec 2022
+description: The beginning of a new journey.
+keywords: Chiso, tech, life
 draft: false
 ---
 
-I am still awake at 7 a.m. Why? We kept trying to make sure the emails we were going to send out this morning were perfect, and we also did some debugging for another project. This has been the pattern lately: not sleeping till it's around 4 a.m., which is obviously unhealthy, but we try to balance it out (as if balance actually exists). Oh, and the "we" I keep mentioning includes [@\_frokes](https://twitter.com/_frokes) and me.
+# Psychology to Computer science
 
-I had built the basic bulk email delivery system the day before, which we would use to send emails to everyone on the wait-list for the next few weeks until... I can't give you a specific launch date because that would be a huge spoiler. But, so far, it's working perfectly and sending emails at breakneck speed, just as we planned (yeah, I lied, we didn't plan the speed, but it's on localhost, so why not?). If your local server is significantly slow, you should examine your code more closely.
+As a young Nigerian, the reality that at some point in your eductional journey, a stable(or better yet profitable) career is only possible when the choice is made to move out of the country, and pursue a career abroad. Being a student whose career choice had been psychology, I could not avoid facing that reality eventualy.
 
-Today also feels like the most important day of the week; we had to make a key team-related choice that wasn't easy, but I can't reveal the details, sheesh! I can't tell you lot of things right now, but let's talk about my week.
+So when I applied to and got  admitted to study Psychology in Ottawa, Canada , I was overjoyed, but I knew I has to prepare, so as not to waste the "opportunity". I started taking two courses, one on [Social Psychology]() and one on [Python Programming fundaentals]() to ensure that my career would be the absolute best it could be, and I would be ready for my first semester.
 
-Returning to the previous paragraph, I was working on something on the staging version of Frikax, and the average 3-ish second load time for the posts wasn't good enough for me, so I basically tore down the infrastructure and rewrote it to achieve a speed of 110ms on average, which is still quite acceptable. I'm not exactly a \"sucker\" for perfection, especially since it's an MVP, but the authentication still didn't seem secure enough, so I rewrote it from the ground up on both sides. You're probably sighing at this point, so let's move on to today.
+However, as I began my studies, I realized that something was missing. Despite my initial enthusiasm for psychology, I found myself more and more drawn to programming. I paidless attention to my social psychology classes and devled more into computer science: I  loved the problem-solving aspect of it and the endless possibilities for creativity and innovation.
 
-What do I have planned for today? A lot. Despite my apparent constant presence on Twitter and WhatsApp, I have a lot more work to accomplish than Frikax. So today I'll be working on the new website for the temporary job I'm doing - I started it almost two weeks ago, although I did mess up my schedule, but who hasn't?
+And so a new fear arose , switching  my major (again). I was worried that I would be seen as not being able to stick to something, or that my interests would lead to me not having a successful career. I had already gone from Medicine to Pharmacy to Psychology, and that was supposed to be my final change. But then I realized that this opportunity to study abroad was a chance for me to chase my passions and do what truly made me happy.
 
-That'll probably do it for this piece; what's the point of it all, you might wonder? This is a public compilation of my numerous ideas, thoughts, and so on, as I stated on the blog home page.
+So, I made the decision to switch my major to computer science and become a software developer. It was a scary move, but I am confident that it is the right one for me. I hope that by following my dreams, I can create a better life for myself and make a positive impact in the world.
 
-Okay, I'll stop here, but tell me, what are your plans for today? I'll get it if you mention/tag me in a tweet. Have a wonderful day, human!
+As I continue on this journey, I am grateful for the support of my friends and family, and for the opportunity to study in a country that values education and personal growth. I am excited to see what the future holds and to make the most of every opportunity that comes my way.
+
+
+>Note: As at the time of this post's creation, I have not yet changed my major, as the semester is already in session. But I do intend to, and will update you when I do
