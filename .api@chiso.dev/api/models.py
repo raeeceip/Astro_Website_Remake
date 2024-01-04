@@ -1,6 +1,5 @@
 import datetime
 from django.utils import timezone
-
 from django.db import models
 
 
@@ -15,11 +14,13 @@ class User(models.Model):
         return self.username
 
 
+
 class Post(models.Model):
     title = models.CharField(max_length=100)
     content = models.TextField()
     author = models.ForeignKey(User, on_delete=models.CASCADE)
     pub_date = models.DateTimeField('date published')
+
 
     def was_published_recently(self):
         return self.pub_date >= timezone.now() - datetime.timedelta(days=1)

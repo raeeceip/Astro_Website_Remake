@@ -18,5 +18,7 @@ pnpm-debug.log*
 
 # macOS-specific files
 .DS_Store
-
+Venv
 brimble.json
+Scripts
+Lib
