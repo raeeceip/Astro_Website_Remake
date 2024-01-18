@@ -1,44 +1,28 @@
-from django.shortcuts import render,get_object_or_404
-from django.core import serializers
-from django.http import HttpResponse,HttpResponseRedirect, JsonResponse
-from django.template import loader
-from django.urls import reverse
-from django.views import generic
-from .models import Post
-from django.http import Http404
+from django.shortcuts import render
+from .serializers import *
+from .models import *
+from django.http import JsonResponse
+# Create your views here.
 
-class IndexView(generic.ListView):
-    template_name = 'Index.html'
-    context_object_name = 'posts'
-    def get_queryset(self):
-        return Post.objects.order_by('-pub_date')[:5]
+def experience(request):
+    experience_list = Experience.objects.filter(public=True)
+    serializer = ExperienceSerializer(experience_list, many=True)
+    return JsonResponse(serializer.data, safe=False)
 
-class BlogPost(generic.DetailView):
-    model = Post
-    template_name = 'blog_post.html'
+def projects(request):
+    project_list = Project.objects.all()
+    serializer = ProjectSerializer(project_list, many=True)
+    return JsonResponse(serializer.data, safe=False)
 
+def articles(request):
+    article_list = Article.objects.all()
+    serializer = ArticleSerializer(article_list, many=True)
+    return JsonResponse(serializer.data, safe=False)
 
-def blog_posts(request):
-    "RETURN ALL POSTS"
-    posts = Post.objects.all()
-    return HttpResponse("You're looking at all posts %s." % posts)
+def contacts(request):
+    contact_list = Contact.objects.all()
+    serializer = ContactSerializer(contact_list, many=True)
+    return JsonResponse(serializer.data, safe=False)
 
-" render blog posts as json "
-def blog_posts_json(request):
-    "RETURN ALL POSTS"
-    posts = Post.objects.all()
-    data = serializers.serialize('json', posts)
-    return HttpResponse(data, content_type='application/json')
-def create_post(request):
-    if request.method == "POST":
-        # Assuming you're sending title, content, etc. from a form
-        new_post = Post(title=request.POST['title'], content=request.POST['content'])
-        new_post.save()
-        return HttpResponseRedirect(reverse('api:blog_post', args=(new_post.id,)))
-    else:
-        # If it's a GET request, just show the post creation form
-        return render(request, 'create_post.html')  # Replace with your template for creating posts
-
-
-
-
+def index(request):
+    return JsonResponse({"message": "Robert Babaev's Resume Data API"})
