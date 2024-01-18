@@ -25,4 +25,4 @@ def contacts(request):
     return JsonResponse(serializer.data, safe=False)
 
 def index(request):
-    return JsonResponse({"message": "Robert Babaev's Resume Data API"})
+    return JsonResponse({"message": "Chiso's Resume Data API"})

@@ -1,47 +1,54 @@
-import datetime
-from django.utils import timezone
 from django.db import models
-
 
 # Create your models here.
 
-class User(models.Model):
-    username = models.CharField(max_length=100)
-    password = models.CharField(max_length=100)
-    email = models.CharField(max_length=100)
+class Experience(models.Model):
+    company = models.CharField(max_length=150)
+    title = models.CharField(max_length=150)
+    start_date = models.DateField()
+    end_date = models.DateField()
+    designation = models.CharField(max_length=30)
+    public = models.BooleanField()
 
     def __str__(self):
-        return self.username
+        return f"{self.title} - {self.company}"
 
 
+class ExperienceSAR(models.Model):
+    statement = models.TextField()
+    index = models.IntegerField()
+    experience = models.ForeignKey(Experience, related_name='experience_sars', on_delete=models.CASCADE)
 
-class Post(models.Model):
-    title = models.CharField(max_length=100)
-    content = models.TextField()
-    author = models.ForeignKey(User, on_delete=models.CASCADE)
-    pub_date = models.DateTimeField('date published')
+    class Meta:
+        unique_together = ['index', 'experience']
+        ordering = ['experience', 'index']
+
+    def __str__(self) -> str:
+        return f"{self.experience} {self.index}"
 
 
-    def was_published_recently(self):
-        return self.pub_date >= timezone.now() - datetime.timedelta(days=1)
+class Article(models.Model):
+    title = models.CharField(max_length=150)
+    link = models.CharField(max_length=150)
 
-    def __str__(self):
+    def __str__(self) -> str:
         return self.title
 
 
-class Comment(models.Model):
-    content = models.TextField()
-    author = models.ForeignKey(User, on_delete=models.CASCADE)
-    post = models.ForeignKey(Post, on_delete=models.CASCADE)
+class Project(models.Model):
+    title = models.CharField(max_length=150)
+    link = models.CharField(max_length=150)
+    description = models.TextField()
+
+    def __str__(self) -> str:
+        return self.title
 
 
-    def __str__(self):
-        return self.content
+class Contact(models.Model):
+    icon = models.CharField(max_length=50)
+    data = models.CharField(max_length=150)
+    contact_name = models.CharField(max_length=50)
+    link = models.CharField(max_length=150)
 
-
-class Like(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
-    post = models.ForeignKey(Post, on_delete=models.CASCADE)
-
-    def __str__(self):
-        return self.user.username + " likes " + self.post.title
+    def __str__(self) -> str:
+        return self.contact_name
