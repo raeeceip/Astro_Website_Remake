@@ -7,6 +7,8 @@ from rest_framework.decorators import api_view
 def post_test(request):
     return Response({'message': 'Hello, world!'})
 
+def index(request):
+     return render(request, 'index.html')
 
 
 

@@ -2,7 +2,7 @@
 import Footer from "../components/Footer.astro";
 import Nav from "../components/Nav.astro";
 import "../styles/global.css";
-
+import { ViewTransitions } from 'astro:transitions';
 
 
 
@@ -50,6 +50,7 @@ let keywords = "Chiso, Chibogu, chiso.tech, raeeceip, developer, engineer, php, 
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" />
 
 		<title>{title}</title>
+		<ViewTransitions />
 	</head>
 	<body class="antialiased animate-fade">
 		<Nav />
@@ -57,3 +58,4 @@ let keywords = "Chiso, Chibogu, chiso.tech, raeeceip, developer, engineer, php, 
 		{!hideFooter && <Footer />}
 	</body>
 </html>
+

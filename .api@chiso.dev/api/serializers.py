@@ -21,7 +21,7 @@ class ArticleSerializer(serializers.ModelSerializer):
 class ProjectSerializer(serializers.ModelSerializer):
     class Meta:
         model = Project
-        fields = ['title', 'link', 'description']
+        fields = ['name', 'url', 'description', "github_url", "image_url", "status"]
 
 class ContactSerializer(serializers.ModelSerializer):
     class Meta:

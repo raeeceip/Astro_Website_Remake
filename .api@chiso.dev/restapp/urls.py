@@ -8,5 +8,6 @@ from . import views
 
 urlpatterns = [
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
+    path('', views.index, name='index'),
     path('post_test/', views.post_test, name='blog_posts'),
 ]

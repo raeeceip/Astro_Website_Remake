@@ -14,6 +14,7 @@ class Experience(models.Model):
         return f"{self.title} - {self.company}"
 
 
+
 class ExperienceSAR(models.Model):
     statement = models.TextField()
     index = models.IntegerField()
@@ -36,13 +37,15 @@ class Article(models.Model):
 
 
 class Project(models.Model):
-    title = models.CharField(max_length=150)
-    link = models.CharField(max_length=150)
+    name = models.CharField(max_length=150)
     description = models.TextField()
+    url = models.URLField(max_length=200, default='https://chiso.dev')  # URL to the project
+    github_url = models.URLField(max_length=200, blank=True, null=True)  # Optional GitHub URL
+    image_url = models.URLField(max_length=200, default='reda.jpg')  # URL to the image stored on a CDN
+    status = models.CharField(max_length=50, default='active')
 
     def __str__(self) -> str:
-        return self.title
-
+        return self.name
 
 class Contact(models.Model):
     icon = models.CharField(max_length=50)

@@ -22,7 +22,10 @@ class ExperienceSARAdmin(admin.ModelAdmin):
 
 
 class ProjectAdmin(admin.ModelAdmin):
-    pass
+    list_display = ('name', 'status', 'url', 'github_url', 'image_url')  # Fields to display in the admin list view
+    list_filter = ('status',)  # Enable filtering by status
+    search_fields = ('name', 'description',)  # Enable search by project name and description
+    ordering = ('name',)  # Default ordering
 
 
 class ContactAdmin(admin.ModelAdmin):
