@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  django-backend:
+    build:
+      context: ./.api@chiso.dev
+      dockerfile: Dockerfile
+    volumes:
+      - ./.api@chiso.dev:/app
+    command: python manage.py runserver 0.0.0.0:8000
+    ports:
+      - "8000:8000"
+    environment:
+      - DJANGO_SETTINGS_MODULE=veta.settings
+
+
+  astro-frontend:
+    build:
+      context: ./astro
+      dockerfile: Dockerfile
+    volumes:
+      - ./astro:/app
+    command: npm run start
+    ports:
+      - "4321:4321"
+
+
+
+

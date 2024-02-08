@@ -48,7 +48,6 @@ INSTALLED_APPS = [
     'rest_framework',
     'django_otp',
     'django_otp.plugins.otp_totp',
-    'tailwindcss',
 ]
 
 MIDDLEWARE = [
@@ -153,12 +152,6 @@ STATICFILES_DIRS = [
 ]
 
 
-
-TAILWINDCSS_CLI_FILE = 'tailwindcss-windows-x64'
-TAILWINDCSS_CONFIG_FILE ='tailwind.config.js'
-
-# For file mode
-TAILWINDCSS_OUTPUT_FILE = 'style.css'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
